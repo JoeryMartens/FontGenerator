@@ -5,9 +5,10 @@ Basic code to load webfonts automatically into your CSS file. This is a basic PH
 In this section of the README you will be informed about the working of the code.
 
 <h2> Webfont_declaration.php </h2>
-
 This file will generate the CSS code. You have to put this file in the same directory as your font directory. 
+<h3> Search for fontfiles </h3>
 
+The code below search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and array.  
 ```
 $fonts = Array();
 foreach (glob("fonts/*") as $filePath) {
@@ -18,7 +19,8 @@ foreach (glob("fonts/*") as $filePath) {
 }
 ```
 
-The code above search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and array.  
+
+
 
 
 
