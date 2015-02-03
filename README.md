@@ -105,7 +105,9 @@ This file will be automatically generated when you include and run the file Webf
 This font-generator/loader is very basic. Below some recommendations to extend this code.
 
 <ul>
-<li> sd </li>
-<li> </li>
+<li> The font-generator/loader has to find the fontsdirectory automatically. So that you can place the fontsdirectory anaywhere on the server </li>
+<li> The font-generator/loader is not efficient. The loading time is too long when you want to include many fonts. This has to be improved  </li>
+<li> This plugin would be nice to use in Wordpress or another CMS. There  </li>
+</ul>
 
 
