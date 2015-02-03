@@ -54,9 +54,16 @@ $FontContent .= $first . $fontFamily . $eot . $eotIEfix . $woff . $ttf . $svg . 
 
 ```
 
+<h3> Write the CSS @font-face declaration into the CSS file </h3>
 
+After we wrote all the filepaths and file-extensions into an array, the code below will put this in an @font-face template. This code will do this for .EOT, .WOFF, .TTF and .SVG formats. At least it adds a normal font-weight and font-style to it and write all the different variables with content into one.
 
-
+```
+$myfile = fopen("fonts.css", "w") or die("Unable to open file!");
+$txt = $FontContent;
+fwrite($myfile, $txt);
+fclose($myfile);
+```
 
 
 
