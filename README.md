@@ -104,6 +104,8 @@ This file will be automatically generated when you include and run the file Webf
 # Recommendations
 This font-generator/loader is very basic. Below some recommendations to extend this code.
 
-
+<ul>
+<li> sd </li>
+<li> </li>
 
 
