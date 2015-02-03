@@ -22,7 +22,7 @@ foreach (glob("fonts/*") as $filePath) {
 
 <h3> Generate @font-face declaration </h3>
 
-After we wrote all the filepaths and file-extensions into an array, the code below will put this in an @font-face template.
+After we wrote all the filepaths and file-extensions into an array, the code below will put this in an @font-face template. This code will do this for .EOT, .WOFF, .TTF and .SVG formats. At least it adds a normal font-weight and font-style to it.
 ```
 $FontContent = '';
 foreach ($fonts as $fontname => $fonttypes) {
