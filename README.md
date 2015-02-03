@@ -98,5 +98,6 @@ include 'Webfont_declaration.php';
 </body>
 </html>
 ```
-
+<h2> fonts.css </h2>
+This file will be automatically generated when you include and run the file Webfont_declaration.php. In this file the webfonts will be added in the right @font-face declaration. 
 
