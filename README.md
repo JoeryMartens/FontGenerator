@@ -107,7 +107,7 @@ This font-generator/loader is very basic. Below some recommendations to extend t
 <ul>
 <li> The font-generator/loader has to find the fontsdirectory automatically. So that you can place the fontsdirectory anaywhere on the server </li>
 <li> The font-generator/loader is not efficient. The loading time is too long when you want to include many fonts. This has to be improved  </li>
-<li> This plugin would be nice to use in Wordpress or another CMS.  </li>
+<li> In order to make this script more usefull and easier to use a plugin could be created (for wordpress or another CMS by example)</li>
 </ul>
 
 
