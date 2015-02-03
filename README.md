@@ -18,7 +18,9 @@ foreach (glob("fonts/*") as $filePath) {
 }
 ```
 
-The code above search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and object.  
+The code above search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and array.  
+
+
 
 
 
