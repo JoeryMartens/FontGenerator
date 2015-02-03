@@ -65,6 +65,38 @@ fwrite($myfile, $txt);
 fclose($myfile);
 ```
 
+<h2> index.php </h2>
+Into the index file you have to include the Webfont_declaration.php file and attach the fonts.CSS file. 
+You can run the Webfont_declaration.php file once, when you only need to add fonts once. If you change the fonts sometimes you can include the file permanently.
 
+```
+<?php
+include 'Webfont_declaration.php';
+?>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Page</title>
+	<meta name="description" content="HTML5">
+	<meta name="author" content="JoeryMartens">
+	<link rel="stylesheet" href="css/fonts.css">
+	
+	<style> 
+		body {
+			background-color: #000;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+ 		<p>
+	 	Hello
+	 	</p> 
+ 	</div>
+</body>
+</html>
+```
 
 
