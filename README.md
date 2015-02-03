@@ -20,7 +20,7 @@ foreach (glob("fonts/*") as $filePath) {
 }
 ```
 
-<h3> Search for fontfiles </h3>
+<h3> Generate @font-face declaration </h3>
 
 The code below search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and array.  
 ```
