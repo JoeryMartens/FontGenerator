@@ -9,7 +9,7 @@ This file will generate the CSS code. You have to put this file in the same dire
 
 <h3> Search for fontfiles </h3>
 
-The code below search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and array.  
+The code below search to all the fontsfiles in your fontdirectory and writes the filepaths and file-extensions in an array.  
 ```
 $fonts = Array();
 foreach (glob("fonts/*") as $filePath) {
@@ -22,7 +22,7 @@ foreach (glob("fonts/*") as $filePath) {
 
 <h3> Generate @font-face declaration </h3>
 
-The code below search to all the fontsfiles in your fontdirectory and writes the filepath and filename in and array.  
+After we wrote all the filepaths and file-extensions into an array, the code below will put this in an @font-face template.
 ```
 $FontContent = '';
 foreach ($fonts as $fontname => $fonttypes) {
