@@ -26,38 +26,29 @@ The code below search to all the fontsfiles in your fontdirectory and writes the
 ```
 $FontContent = '';
 foreach ($fonts as $fontname => $fonttypes) {
-
-  
-  
-  // Create font-template
-  
-  
   $first = '@font-face {';
-    
-     
-     
   $fontFamily = 'font-family: ' . $fontname . ';';
   
-  foreach($fonttypes as $fonttype){
-
-	  
-  if($fonttype == 'eot') {
-	$eot = "src: url('../fonts/" . $fontname . ".eot');";
-	$eotIEfix = "src: url('../fonts/" . $fontname . ".eot?#iefix') format('embedded-opentype'),";
+  foreach($fonttypes as $fonttype) {
+  	if($fonttype == 'eot') {
+		$eot = "src: url('../fonts/" . $fontname . ".eot');";
+		$eotIEfix = "src: url('../fonts/" . $fontname . ".eot?#iefix') format('embedded-opentype'),";	
 	}
-  elseif($fonttype == 'woff') {
-	$woff = "src: url('../fonts/" . $fontname . ".woff') format('woff'),";
-  }
-  elseif($fonttype == 'ttf') {
-  	$ttf = "src: url('../fonts/" . $fontname . ".ttf') format('truetype'),";
-  }
-  elseif($fonttype == 'svg') {
-  	$svg = "src: url('../fonts/" . $fontname . ".svg') format('svg');";
-  } 
+	
+  	elseif($fonttype == 'woff') {
+		$woff = "src: url('../fonts/" . $fontname . ".woff') format('woff'),";
+  	}
+	elseif($fonttype == 'ttf') {
+  		$ttf = "src: url('../fonts/" . $fontname . ".ttf') format('truetype'),";
+  	}
+  	elseif($fonttype == 'svg') {
+  		$svg = "src: url('../fonts/" . $fontname . ".svg') format('svg');";
+  	} 
   }
   
   $fontWeight = 'font-weight: normal;
-    	font-style: normal;}';
+  font-style: normal;
+}';
 
 ```
 
