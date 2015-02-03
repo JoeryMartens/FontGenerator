@@ -1,2 +1,5 @@
 # FontGenerator
-Basic font generator plugin
+This plugin is a basic plugin for...
+
+# How it works
+
